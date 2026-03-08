@@ -1,10 +1,11 @@
 flask==3.0.0
 flask-cors==4.0.0
 numpy==1.26.4
-scikit-learn
-prophet
-pymongo
-python-dotenv
-joblib
-pandas
+pandas==2.2.0
+scikit-learn==1.4.0
+prophet==1.1.5
+pymongo==4.6.1
+python-dotenv==1.0.0
+joblib==1.3.2
 gunicorn==21.2.0
+plotly==5.18.0
