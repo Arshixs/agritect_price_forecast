@@ -47,7 +47,7 @@ def load_models():
 # Load models on startup
 load_models()
 
-def get_historical_data(crop_name, district='Kanpur', days=1300):
+def get_historical_data(crop_name, district='Varanasi', days=1300):
     """Fetch historical price data from MongoDB HistoricalPrice collection"""
     try:
         # Fetch from historicalprices collection
