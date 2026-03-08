@@ -8,3 +8,4 @@ pymongo
 python-dotenv
 joblib
 pandas
+gunicorn==21.2.0
