@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: price-forecast-service
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    disk:
+      name: models-disk
+      mountPath: /opt/render/project/src/models
+      sizeGB: 1
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: DB_NAME
+        sync: false
